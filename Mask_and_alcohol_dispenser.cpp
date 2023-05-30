@@ -176,18 +176,20 @@ void loop() {
         digitalWrite(ledLight, HIGH);
         coinInserted = 3;
 
-        Serial.println("Running 2000");
-        maskServo.writeMicroseconds(2000);
-        delay(950);
+        // Running servo motor
+        // Serial.println("Running 2000");
+        // maskServo.writeMicroseconds(2000);
+        // delay(950);
       
-        Serial.println("Running 1500");
-        maskServo.writeMicroseconds(1500);
-        delay(500);
+        // Stops the servo motor
+        // Serial.println("Running 1500");
+        // maskServo.writeMicroseconds(1500);
+        // delay(500);
 
         dispenseEvent();
     }
 
     Serial.println("\nEnd of loop.\n");
     coinReaderIsReady = 1;
-    delay(500);
+    delay(1000);
 }
